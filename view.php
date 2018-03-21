@@ -29,15 +29,30 @@ if ($connection == false){
               margin-top: 50px;
               background: #ff7f50;
           }
+          input[type=text]{
+              height: 40px;
+              width: 900px;
+          }
+          input[type=submit]{
+                height: 40px;
+          }
     </style>
 </head>
 <body>
    <div class="container col-md-10">
           <div class="card">
+            
                <div class="card-header">
                      <h1 class="text-muted" style="text-align: center">All Student List</h1>
                </div>
               <div class="card-body">
+
+                  <form action="search.php" method="post">
+                <div class="form-group">
+                    <input type="text" name="search_value" placeholder="Search Student">
+                    <input type="submit" name="search" value="Search">
+                </div>
+            </form>
 
                     <table class="table table-striped">
                           <thead>
